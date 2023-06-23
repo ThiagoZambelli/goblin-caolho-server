@@ -1,0 +1,24 @@
+{
+  "name": "goblin-caolho-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoZambelli/goblin-caolho-server.git"
+  },
+  "author": "ThiagoZambelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoZambelli/goblin-caolho-server/issues"
+  },
+  "homepage": "https://github.com/ThiagoZambelli/goblin-caolho-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

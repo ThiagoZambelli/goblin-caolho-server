@@ -1,5 +1,12 @@
 [
     {
+        "id": 0,
+        "nome": "testando o patch",
+        "raridade": "Super Raro",
+        "descricao": "Teste de DB",
+        "tipo": "Teste"
+    },
+    {
         "id": 1,
         "nome": "Adamantine Armor",
         "raridade": "Uncommon",

@@ -22,12 +22,19 @@ export function getUser(req, res) {
 
 export function postUser(req, res) {
     try {
-        const userNovo = req.body;
+        const { email, senha, nome, endereco, complemento, cep } = req.body;
+        const userNovo = { email: email, senha:senha, nome:nome, endereco:endereco, complemento:complemento, cep:cep } ;
 
-        if (req.body.nome && req.body.id) {
-            gravaUser(userNovo)
+        if (userNovo.nome && userNovo.email && userNovo.senha && userNovo.endereco && userNovo.complemento && userNovo.cep ) {
+            const resposta = gravaUser(userNovo)
+            let menssagem;
+            if(resposta){
+                menssagem = resposta
+            } else {
+               menssagem = "User Cadastrado"
+            }
             res.status(201)
-            res.send("User Cadastrado")
+            res.send(menssagem)
         } else {
             res.status(400)
             res.send("Formato Invalido")
